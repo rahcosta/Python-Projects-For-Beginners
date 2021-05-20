@@ -20,19 +20,20 @@ print('-=' * 20)
 length = int(input('Enter the length of password: '))
 
 # Defining data:
-lower = string.ascii_lowercase
-upper = string.ascii_uppercase
+letters = string.ascii_letters #you can choose this variable instead of the lower and upper variables
+# lower = string.ascii_lowercase
+# upper = string.ascii_uppercase
 numbers = string.digits
 punctuation = string.punctuation
 
 # Combining data:
-all = lower + upper + numbers + punctuation
+all = letters + numbers + punctuation
 
 # Password:
 password = ''.join(sample(all, length))
 
 print('Processing...')
-sleep(2)
+sleep(1)
 print(f'Your password is: \033[7m{password}\033[m')
 
 # The code \033[7m...\033[m was used to colorized the password on terminal.
