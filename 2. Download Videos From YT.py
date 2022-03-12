@@ -14,5 +14,5 @@ try:
     # Downloading and saving the video: modify backslash to forward slash
     video_highest_res.download(output_path = 'C:/Users/example/Videos/')
 except: 
-    print("Some Error!") 
+    print('Some Error!')
 print('Download Completed!')
